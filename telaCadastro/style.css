@@ -121,7 +121,7 @@ h1{
   color: #9E75FF;
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
   padding: 30px;
   margin-left: 330px;
 }
