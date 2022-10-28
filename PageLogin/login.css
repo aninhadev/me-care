@@ -1,3 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body{
-    background-color: #9E75FF;
+    background-color: white;
 }
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.txthome {
+    padding: 30px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 450px;
+ 
+}
+ 
+.txthome > h2 {
+    color: #9E75FF;
+    font-size: 42px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.txthome > p {
+    margin-top: 10px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.content{
+    margin-left: 200px;
+    margin-top: 100px;
+    background-color: #9E75FF;
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.content > img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+input{
+    text-align:left;
+    padding-left: 10px;
+    
+    margin-bottom: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 290px;
+}
+
+#btn-entrar{
+    all: unset;
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #btn-entrar::after,
+  #btn-entrar::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  #btn-entrar::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background:rgb(109, 34, 179);
+    border-radius: 10px;
+  }
+  
+  #btn-entrar::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  #btn-entrar:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  #btn-entrar:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  #btn-entrar:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+
+  a {
+    text-decoration: none;
+    color: #d8d1d1;
+    font-weight: 700;
+  }
